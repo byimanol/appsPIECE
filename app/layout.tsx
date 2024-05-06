@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import "./globals.css";
 
 export const metadata = {
-  title: 'Apps PICE',
+  title: 'Apps PIECE',
   description: 'Use our online tool, a roulette that picks candidate names randomly, perfect for fair and unbiased selections in any event.',
 }
 
