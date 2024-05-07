@@ -14,22 +14,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
-    <body className="bg-gray-800 overflow-x-hidden" >
-      <header>
-        <meta name="google-adsense-account" content="ca-pub-2588507502767667"/>
+      <header></header>
+      <body className="bg-gray-800 overflow-x-hidden" >
         <script async={true} src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2588507502767667"
         crossOrigin="anonymous"></script>
-      </header>
-      
-    
-      <main>
-        <nav><Navbar/></nav>
-        <section>{children}</section>
-        <footer className=""><Footer/></footer>
+        <meta name="google-adsense-account" content="ca-pub-2588507502767667"/>
+        <main>
+          <nav><Navbar/></nav>
+          <section>{children}</section>
+          <footer className=""><Footer/></footer>
         </main>
-      <footer></footer>
-    </body>
+        <footer></footer>
+      </body>
     </html>
   )
 }
