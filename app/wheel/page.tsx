@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useRef, useEffect,useState} from 'react';
-import styles from './roulette.module.css';
+import styles from './wheel.module.css';
 import Modal from '../components/Modal';
 
 let ultimocolor=["",""];
@@ -202,7 +202,7 @@ const Roulette = () => {
 
           <div className='bg-neutral-50 text-xl m-20 p-5 rounded'>
             <p className='mb-4'>
-              The web roulette has become a fascinating tool for online events, where chance plays a key role in the selection of candidates. By incorporating a random system, this type of digital tool allows a participant to be chosen randomly, adding an element of suspense and excitement to the experience. The implementation of various colors in the roulette not only enhances the visual aesthetics but also facilitates quick identification of the winners. Each spin of the roulette generates anticipation among the participants, as they watch the number selected at random, keeping the audience engaged and expectant, which is key to the success of any interactive online activity.</p>
+            The web roulette wheel has become a fascinating tool for online events, where chance plays a key role in the selection of candidates. By incorporating a random system, this type of digital tool allows a participant to be chosen randomly, adding an element of suspense and excitement to the experience. The implementation of various colors in the roulette wheel not only enhances the visual aesthetics but also facilitates quick identification of the winners. Each spin of the roulette wheel generates anticipation among the participants, as they watch the number selected at random, keeping the audience engaged and expectant, which is key to the success of any interactive online activity.</p>
           </div>
 
       </div>

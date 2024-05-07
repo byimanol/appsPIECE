@@ -2,5 +2,4 @@ User-agent: AdsBot-Google
 User-agent: Mediapartners-Google
 
 
-Disallow: /contact/
 Crawl-delay: 1
