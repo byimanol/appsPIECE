@@ -25,7 +25,7 @@ function ramdocolor(item="") {
   
 }
 
-const Roulette = () => {
+const wheel = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [estado, setEstado] = useState('Sortear');
   const [wave, setWave] = useState(true); 
@@ -214,4 +214,4 @@ const Roulette = () => {
 
 
 
-export default Roulette;
+export default wheel;
