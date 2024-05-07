@@ -3,7 +3,7 @@
 import React, { useRef, useEffect,useState} from 'react';
 
 const ContactPage = () => {
-    const [email, setEmail] = useState('Appspiece@gmail.com'); // Estado para el email
+    const [email, setEmail] = useState('contact@appspiece.com'); // Estado para el email
   
     // Función para copiar el email al portapapeles
     const copyToClipboard = () => {

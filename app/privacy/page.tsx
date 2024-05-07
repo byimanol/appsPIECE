@@ -45,7 +45,7 @@ const PrivacyPage = () => {
 
         <h2 className="text-xl font-semibold mb-4">7. Contact</h2>
         <p className="mb-4">
-        If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at AppsPiece@gmail.com.
+        If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at . contact@appspiece.com.
         </p>
 
         <p className="mb-4">Thank you for visiting AppsPiece.com!</p>
