@@ -6,6 +6,6 @@ export const runtime ="edge";
 
 export default function Home() {
     return (
-        useRouter().push('/roulette')
+        useRouter().push('/wheel')
     )
 }
