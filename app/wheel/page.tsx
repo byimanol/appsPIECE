@@ -30,7 +30,6 @@ const wheel = () => {
   const [estado, setEstado] = useState('Sortear');
   const [wave, setWave] = useState(true); 
   const [getConcursantes, setConcursantes] = useState('');
-  const [isReady, setIsReady] = useState(false);
   const [isModalOpen, setModalOpen] = useState(false);
   const [win, setWin] = useState('');
 
@@ -128,13 +127,7 @@ const wheel = () => {
 
     };
 
-    const result = dibujarRueda();
-    if (result) {
-        result.then(() => {
-            setIsReady(true);
-        });
-    }
-
+    dibujarRueda();
   }, [getConcursantes]);
   
   const handleTextChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -181,7 +174,7 @@ const wheel = () => {
 
   return (
     <>
-      <div style={{ opacity: isReady ? '1' : '0' }}  className={` flex-wrap flex justify-center items-center ${styles.container} `}> 
+      <div className={` flex-wrap flex justify-center items-center ${styles.container} `}> 
 
         <Modal 
           children={win} 
