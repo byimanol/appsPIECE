@@ -1,6 +1,8 @@
 import React from 'react';
 
+
 const PrivacyPage = () => {
+
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold text-center mb-6">Privacy Policy for AppsPiece.com</h1>
