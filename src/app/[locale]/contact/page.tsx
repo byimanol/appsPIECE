@@ -1,22 +1,25 @@
 "use client"
 
-import React, { useRef, useEffect,useState} from 'react';
+import React, {useState} from 'react';
+import {useTranslations} from 'next-intl';
+
 
 const ContactPage = () => {
+  const t = useTranslations('contact');
     const [email, setEmail] = useState('contact@appspiece.com'); // Estado para el email
   
     // Función para copiar el email al portapapeles
     const copyToClipboard = () => {
       navigator.clipboard.writeText(email)
-        .then(() => alert("Email copiado al portapapeles!"))
-        .catch(err => console.error("Error al copiar el email: ", err));
+        .then(() => alert(t('success')))
+        .catch(err => console.error(t('error'), err));
     };
   
     return (
 
       <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg flex flex-col items-center justify-center">
 
-        <h1 className="m-10 text-3xl font-bold ">Some issues may be caused by internet connection problems. Try pressing Ctrl + F5 to refresh the page and check if the issue persists. If it continues, please send us an email to let us know, thank you.</h1>
+        <h1 className="m-10 text-3xl font-bold ">{t('text')}</h1>
 
         <div className="flex space-x-2">
           <input
@@ -29,7 +32,7 @@ const ContactPage = () => {
             onClick={copyToClipboard}
             className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
           >
-            Copiar
+            {t('button')}
           </button>
         </div>
       </div>

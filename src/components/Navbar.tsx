@@ -1,15 +1,16 @@
 "use client"
 import React, {useState} from "react";
-import Link from "next/link"
+import {Link} from '../navigation';
+import {useTranslations} from 'next-intl';
 
-const Navbar = () => {
-
+const Navbar  = () => {
+    const t = useTranslations('header');
     const [isClick, setisClick] = useState(false);
-
     const toggleNav = () =>{
         setisClick(!isClick);
     };
 
+    
     return(
         <div style={{ background: '#606be5'}} className={``}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,12 +27,14 @@ const Navbar = () => {
                     <div className="hidden md:block">
                         <div className="text-lg ml-4 flex items-center space-x-4">
 
-                            <Link href="/wheel" className="font-bold text-white hover:bg-white hover:text-black rounded-lg p-2">
-                                Wheel
+                            <Link href={`/wheel`} className="font-bold text-white hover:bg-white hover:text-black rounded-lg p-2">
+                            {t('wheel')}
                             </Link>
-                            <Link href="/contact" className="font-bold text-white hover:bg-white hover:text-black rounded-lg p-2">
-                                Contact
+
+                            <Link href={`/contact`} className="font-bold text-white hover:bg-white hover:text-black rounded-lg p-2">
+                            {t('contact')}
                             </Link>
+
                         </div>
                     </div>
                     <div className="md:hidden flex items-center">
@@ -70,8 +73,8 @@ const Navbar = () => {
             {isClick && ( 
                 <div className="md:hidden">
                     <div className="text-lg px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link href="/wheel" className="text-white block hover:bg-white hover:tesxt-black rounded-lg p-2">Wheel</Link>
-                        <Link href="/contact" className="text-white block hover:bg-white hover:tesxt-black rounded-lg p-2">Contact</Link>
+                        <Link href={`/wheel`}  className="text-white block hover:bg-white hover:tesxt-black rounded-lg p-2">{t('wheel')}</Link>
+                        <Link href={`/contact`} className="text-white block hover:bg-white hover:tesxt-black rounded-lg p-2">{t('contact')}</Link>
                     </div>
                 </div> 
             )}

@@ -1,6 +1,8 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import "./globals.css";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import "../globals.css";
+import pick from 'lodash/pick';
+import {NextIntlClientProvider, useMessages} from 'next-intl';
 
 
 export const metadata = {
@@ -10,11 +12,16 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  params: {locale}
 }: {
   children: React.ReactNode
+  params: {locale: string};
 }) {
+
+  const messages = useMessages();
+
   return (
-    <html lang="">
+    <html lang={locale}>
       <body className="bg-gray-800 overflow-x-hidden" >
         <header>
           <link rel="icon" href="/favicon.ico" />
@@ -24,12 +31,19 @@ export default function RootLayout({
         </header>
        
         <main>
-          <nav><Navbar/></nav>
+            <NextIntlClientProvider messages={pick(messages,"header")}>
+            <nav><Navbar /></nav>
+            </NextIntlClientProvider>
+          
           <section>
+            <NextIntlClientProvider messages={pick(messages,"wheel","contact")}>
               {children}
+            </NextIntlClientProvider>
           </section>
         </main>
-        <footer><Footer/></footer>
+        <NextIntlClientProvider messages={pick(messages,"footer")}>
+          <footer><Footer /></footer>
+        </NextIntlClientProvider>
       </body>
     </html>
   )
