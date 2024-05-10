@@ -53,7 +53,8 @@
         "button":"Copy"
     },
     "wheel":{
-        "text":"A random wheel is a dynamic and engaging tool perfect for conducting draws and making decisions. It can be customized to include various elements such as numbers, countries, teams, colors, and even irregular verbs or questions. This versatility makes the random wheel an ideal choice for teachers, event organizers, or anyone looking to add a fun twist to their decision-making processes. The aesthetic design can be tailored to fit the theme of any event, enhancing user experience. Available as an app, it's easily accessible, making it convenient for on-the-go decisions. Whether you're looking to pick a random animal or generate a random letter from the alphabet, the random wheel ensures every spin is fair and exciting."
+        "text":"A random wheel is a dynamic and engaging tool perfect for conducting draws and making decisions. It can be customized to include various elements such as numbers, countries, teams, colors, and even irregular verbs or questions. This versatility makes the random wheel an ideal choice for teachers, event organizers, or anyone looking to add a fun twist to their decision-making processes. The aesthetic design can be tailored to fit the theme of any event, enhancing user experience. Available as an app, it's easily accessible, making it convenient for on-the-go decisions. Whether you're looking to pick a random animal or generate a random letter from the alphabet, the random wheel ensures every spin is fair and exciting.",
+        "placerholder":"Participant 1      Participant 2        Participant 3               ......"
     },
     "header":{ 
         "contact":"Contact",

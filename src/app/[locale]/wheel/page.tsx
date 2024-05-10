@@ -194,7 +194,7 @@ const wheel = () => {
           <div  style={{ display: wave ? 'block' : 'none' }} className={styles.wave}></div>
           <canvas onClick={manejarSorteo} ref={canvasRef} width="600" height="600"  className={`${styles.cavas}`}></canvas>
           </div>
-          <textarea  value={getConcursantes}  onChange={handleTextChange} placeholder="Participant 1      Participant 2        Participant 3               ......" className={`flex justify-center items-center ${styles.text}`}></textarea>
+          <textarea  value={getConcursantes}  onChange={handleTextChange} placeholder={`${t('placerholder')}`} className={`flex justify-center items-center ${styles.text}`}></textarea>
 
 
           <div className='bg-neutral-50 text-xl m-20 p-5 rounded'>

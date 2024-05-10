@@ -54,7 +54,8 @@
         "button":"Copiar"
     },
     "wheel":{
-        "text":"La ruleta aleatoria es una herramienta versátil y divertida, ideal para realizar sorteos de manera imparcial y emocionante. Personalizable y estéticamente agradable, esta ruleta puede adaptarse a diversas necesidades, permitiendo incluir nombres, números, colores o incluso opciones específicas como sí o no. Es perfecta para dinamizar eventos, aulas o reuniones, ofreciendo un método transparente y rápido para decidir ganadores o resolver decisiones. La disponibilidad de aplicaciones y programas facilita su uso en diversos dispositivos, asegurando que todos puedan acceder y participar sin complicaciones. Con la ruleta aleatoria, cada giro promete una nueva aventura en sorteos y decisiones al azar."
+        "text":"La ruleta aleatoria es una herramienta versátil y divertida, ideal para realizar sorteos de manera imparcial y emocionante. Personalizable y estéticamente agradable, esta ruleta puede adaptarse a diversas necesidades, permitiendo incluir nombres, números, colores o incluso opciones específicas como sí o no. Es perfecta para dinamizar eventos, aulas o reuniones, ofreciendo un método transparente y rápido para decidir ganadores o resolver decisiones. La disponibilidad de aplicaciones y programas facilita su uso en diversos dispositivos, asegurando que todos puedan acceder y participar sin complicaciones. Con la ruleta aleatoria, cada giro promete una nueva aventura en sorteos y decisiones al azar.",
+        "placerholder":"Participante      1 Participante 2      Participante 3      ......"
     },
     "header":{ 
         "contact":"Conctato",
