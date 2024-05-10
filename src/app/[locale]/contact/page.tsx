@@ -3,6 +3,7 @@
 import React, {useState} from 'react';
 import {useTranslations} from 'next-intl';
 
+export const runtime ="edge";
 
 const ContactPage = () => {
   const t = useTranslations('contact');

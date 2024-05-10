@@ -5,6 +5,8 @@ import styles from './wheel.module.css';
 import Modal from '../../../components/Modal';
 import {useTranslations} from 'next-intl';
 
+
+export const runtime ="edge";
 let ultimocolor=["",""];
 
 function ramdocolor(item="") {

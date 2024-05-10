@@ -1,6 +1,6 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
-
+export const runtime ="edge";
 const PrivacyPage = () => {
   const t = useTranslations('privacy');
 

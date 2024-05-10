@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {useTranslations} from 'next-intl';
-
+export const runtime ="edge";
 const TermsPage = () => {
     const t = useTranslations('terms');
 
