@@ -1,9 +1,24 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
+import type { Metadata } from 'next'
+
+
+export const metadata: Metadata = {
+  title: '',
+  description: '',
+}
+ 
+
 export const runtime ="edge";
+
+
 const PrivacyPage = () => {
+
   const t = useTranslations('privacy');
 
+  metadata.title= t('pageTitle');
+  metadata.description= t('intro');
+  
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold text-center mb-6">{t('pageTitle')}</h1>

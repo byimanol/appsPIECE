@@ -3,12 +3,16 @@ import Footer from "../../components/Footer";
 import "../globals.css";
 import pick from 'lodash/pick';
 import {NextIntlClientProvider, useMessages} from 'next-intl';
+import {useTranslations} from 'next-intl';
+import type { Metadata } from 'next'
 
-
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Apps PIECE',
   description: 'Use our online tool, a roulette that picks candidate names randomly, perfect for fair and unbiased selections in any event.',
+  keywords:"",
 }
+ 
+
 
 export default function RootLayout({
   children,
@@ -19,6 +23,9 @@ export default function RootLayout({
 }) {
 
   const messages = useMessages();
+  const t = useTranslations('header');
+  metadata.keywords= t('keywords');
+
 
   return (
     <html lang={locale}>
@@ -47,4 +54,7 @@ export default function RootLayout({
       </body>
     </html>
   )
+
+
+
 }

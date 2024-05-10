@@ -3,10 +3,12 @@
 import React, {useState} from 'react';
 import {useTranslations} from 'next-intl';
 
+
 export const runtime ="edge";
 
+
 const ContactPage = () => {
-  const t = useTranslations('contact');
+
     const [email, setEmail] = useState('contact@appspiece.com'); // Estado para el email
   
     // Función para copiar el email al portapapeles
@@ -15,7 +17,9 @@ const ContactPage = () => {
         .then(() => alert(t('success')))
         .catch(err => console.error(t('error'), err));
     };
-  
+
+    const t = useTranslations('contact');
+
     return (
 
       <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg flex flex-col items-center justify-center">

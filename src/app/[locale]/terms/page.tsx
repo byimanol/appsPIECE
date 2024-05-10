@@ -1,9 +1,21 @@
 import React from 'react';
-
 import {useTranslations} from 'next-intl';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: '',
+  description: '',
+}
+ 
 export const runtime ="edge";
+
+
 const TermsPage = () => {
-    const t = useTranslations('terms');
+
+  const t = useTranslations('terms');
+
+  metadata.title= t('pageTitle');
+  metadata.description= t('section1Content');
 
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">
