@@ -178,7 +178,7 @@ const wheel = () => {
 
   return (
     <>
-      <div className={` flex-wrap flex justify-center items-center ${styles.container} `}> 
+      <div className={`relative overflow-x-hidden flex-wrap flex justify-center items-center ${styles.container} `}> 
 
         <Modal 
           children={win} 
@@ -193,10 +193,12 @@ const wheel = () => {
           <div onClick={manejarSorteo} className={`${styles.markwinner}`}></div>
           <div  style={{ display: wave ? 'block' : 'none' }} className={styles.wave}></div>
           <canvas onClick={manejarSorteo} ref={canvasRef} width="600" height="600"  className={`${styles.cavas}`}></canvas>
+        </div>
+
+          <div className='flex flex-col'>
+            <button  style={{ margin: "60px 0 10px"}}    onClick={manejarSorteo} className='bg-zinc-950 min-w-40 m-10  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Play</button>
+            <textarea  value={getConcursantes}  onChange={handleTextChange} placeholder={`${t('placerholder')}`} className={`flex justify-center items-center ${styles.text}`}></textarea>
           </div>
-          <textarea  value={getConcursantes}  onChange={handleTextChange} placeholder={`${t('placerholder')}`} className={`flex justify-center items-center ${styles.text}`}></textarea>
-
-
           <div className='bg-neutral-50 text-xl m-20 p-5 rounded'>
             <p className='mb-4'>{t('text')}</p>
           </div>
