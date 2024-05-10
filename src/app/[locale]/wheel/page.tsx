@@ -199,7 +199,7 @@ const wheel = () => {
             <button  style={{ margin: "60px 0 10px"}}    onClick={manejarSorteo} className='bg-zinc-950 min-w-40 m-10  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>Play</button>
             <textarea  value={getConcursantes}  onChange={handleTextChange} placeholder={`${t('placerholder')}`} className={`flex justify-center items-center ${styles.text}`}></textarea>
           </div>
-          <div className='bg-neutral-50 text-xl m-20 p-5 rounded'>
+          <div className='bg-neutral-50 text-xl m-4 p-5 rounded'>
             <p className='mb-4'>{t('text')}</p>
           </div>
 
