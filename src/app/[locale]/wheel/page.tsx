@@ -8,8 +8,8 @@ import Wheel from '../../../components/Rulette';
 
 
 export const metadata: Metadata = {
-  title: '',
-  description: '',
+  title: 'Random Wheel',
+  description: 'Random roulette is a versatile and fun tool, ideal for conducting draws in an unbiased and exciting way.',
 }
  
 export const runtime ="edge";
