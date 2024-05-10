@@ -48,12 +48,11 @@ const wheel = () => {
 
       return new Promise((resolve) => {
         const centro = canva.width / 2;
-        const concursantes = getConcursantes.split("\n");
-      
-          // Código que realiza alguna tarea y luego llama a resolve
-          
+        const concursantes = getConcursantes.split("\n").filter(item => item.trim() !== "");
 
+        if(concursantes.length<=0)concursantes.push('1','2','3');
         
+
         ctx.clearRect(0, 0, canva.width, canva.height); // Limpia el canvas
 
         ultimocolor=["",""];
@@ -139,7 +138,7 @@ const wheel = () => {
   };
 
   const manejarSorteo = () => {
-    const concursantes = getConcursantes.split("\n");
+    const concursantes = getConcursantes.split("\n").filter(item => item.trim() !== "");
     if(!concursantes[0]) return;
     const canva = canvasRef.current;
     if (!canva) return;
