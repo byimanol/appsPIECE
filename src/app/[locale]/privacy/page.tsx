@@ -6,6 +6,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy for AppsPiece.com',
   description: 'Welcome to AppsPiece.com. At AppsPiece.com, we deeply value the privacy and security of our users.',
+  keywords:"",
 }
  
 

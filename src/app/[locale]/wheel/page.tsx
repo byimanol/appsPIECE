@@ -10,6 +10,7 @@ import Wheel from '../../../components/Rulette';
 export const metadata: Metadata = {
   title: 'Random Wheel',
   description: 'Random roulette is a versatile and fun tool, ideal for conducting draws in an unbiased and exciting way.',
+  keywords:"roulette wheel simulator,roulette wheel,american roulette wheel,roulette wheel roulette,roulette wheel game,roulette wheel online",
 }
  
 export const runtime ="edge";
@@ -19,6 +20,7 @@ const wheel = () => {
   const t = useTranslations('wheel');
   metadata.title= t('title');
   metadata.description= t('descrip');
+  metadata.keywords= t('keywords');
   return (
     <>
       <div className={`relative overflow-x-hidden flex-wrap flex justify-center items-center ${styles.container} `}> 

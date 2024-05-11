@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Terms and Conditions of Use for AppsPiece.com',
   description: 'By using the services offered on AppsPiece.com, you agree to be legally bound by these terms and conditions.',
+  keywords:"",
 }
  
 export const runtime ="edge";
