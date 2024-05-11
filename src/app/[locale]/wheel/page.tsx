@@ -10,7 +10,7 @@ import Wheel from '../../../components/Rulette';
 export const metadata: Metadata = {
   title: 'Random Wheel',
   description: 'Random roulette is a versatile and fun tool, ideal for conducting draws in an unbiased and exciting way.',
-  keywords:"roulette wheel simulator,roulette wheel,american roulette wheel,roulette wheel roulette,roulette wheel game,roulette wheel online",
+  keywords: "roulette wheel simulator, random draw tool, decision maker wheel, online roulette game, wheel of fortune, classroom decision wheel",
 }
  
 export const runtime ="edge";
