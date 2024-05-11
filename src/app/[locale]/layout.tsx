@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Apps PIECE',
   description: 'Use our online tool, a roulette that picks candidate names randomly, perfect for fair and unbiased selections in any event.',
-  keywords:"",
+  keywords:"Sweepstakes, contests, get Instagram comment, random Instagram comment, Facebook giveaway, free sweepstakes, Instagram giveaway app, free Instagram giveaways, free Facebook giveaway, random winner, random draw, roulette of chance, wheel of fortune, random participant, random roulette",
 }
  
 
@@ -21,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode
   params: {locale: string};
 }) {
-
-  const messages = useMessages();
+  
   const t = useTranslations('header');
   metadata.keywords= t('keywords');
+
+  const messages = useMessages();
 
 
   return (

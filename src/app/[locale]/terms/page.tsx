@@ -3,8 +3,8 @@ import {useTranslations} from 'next-intl';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '',
-  description: '',
+  title: 'Terms and Conditions of Use for AppsPiece.com',
+  description: 'By using the services offered on AppsPiece.com, you agree to be legally bound by these terms and conditions.',
 }
  
 export const runtime ="edge";
