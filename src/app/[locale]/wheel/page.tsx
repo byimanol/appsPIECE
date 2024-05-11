@@ -28,6 +28,7 @@ const wheel = () => {
         <Wheel></Wheel>
 
         <div className='bg-neutral-50 text-xl p-5 rounded mt-40'>
+          <h1 className='m-10 text-3xl font-bold '>{t('title')}</h1>
           <p className='bg-neutral-50'>{t('text')}</p>
         </div>
 
