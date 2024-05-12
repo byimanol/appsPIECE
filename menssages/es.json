@@ -71,7 +71,9 @@
         "title":"Todos los derechos reservados.",
         "contact":"Contacto",
         "terms":"Términos y Condiciones",
-        "privacy":"Política de Privacidad"
+        "privacy":"Política de Privacidad",
+        "I1":"Ingles",
+        "I2":"Español"
     }
 }
 

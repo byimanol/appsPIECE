@@ -14,12 +14,15 @@ const Footer = () => {
                     <Link href="/terms" className="hover:underline me-4 md:me-6">
                     {t('terms')}
                     </Link>  
-                    <Link href="/privacy" className="hover:underline me-4 md:me-6>privacy">
+                    <Link href="/privacy" className="hover:underline me-4 md:me-6">
                     {t('privacy')}
                     </Link>
-                    <Link href="/contact" className="hover:underline me-4 md:me-6>privacy">
+                    <Link href="/contact" className="hover:underline me-4 md:me-6">
                     {t('contact')}
                     </Link>
+                    <Link  href="/" className="hover:underline me-4 md:me-6" locale="es">{t('I2')}</Link>
+                    <Link href="/"  className="hover:underline me-4 md:me-6" locale="en">{t('I1')}</Link>
+
                 </ul>
             </div>
         </div>

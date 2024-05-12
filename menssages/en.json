@@ -70,7 +70,10 @@
         "title":"All Rights Reserved.",
         "contact":"Contact",
         "terms":"Terms and Conditions",
-        "privacy":"Privacy Policy"
+        "privacy":"Privacy Policy",
+        "I1":"English",
+        "I2":"Spanish"
+
     }
 }
 

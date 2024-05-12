@@ -10,7 +10,7 @@ const Navbar  = () => {
         setisClick(!isClick);
     };
 
-    
+
     return(
         <div style={{ background: '#606be5'}} className={``}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,6 +27,7 @@ const Navbar  = () => {
                     <div className="hidden md:block">
 
                         <div className="text-lg ml-4 flex items-center space-x-4">
+
                             <Link href={`/`} className="font-bold text-white hover:bg-slate-400 hover:text-black rounded-lg p-2">
                             {t('home')}
                             </Link>
