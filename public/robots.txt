@@ -1,5 +1,17 @@
 User-agent: AdsBot-Google
-User-agent: Mediapartners-Google
+Disallow: /es/contact
+Disallow: /en/contact
+Disallow: /es/privacy
+Disallow: /en/privacy
+Disallow: /en/terms
+Disallow: /es/terms
 
+User-agent: Mediapartners-Google
+Disallow: /es/contact
+Disallow: /en/contact
+Disallow: /es/privacy
+Disallow: /en/privacy
+Disallow: /en/terms
+Disallow: /es/terms
 
 Crawl-delay: 1

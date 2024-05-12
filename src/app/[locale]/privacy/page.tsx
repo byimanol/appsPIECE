@@ -1,14 +1,22 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
-import type { Metadata } from 'next'
+import {getTranslations} from 'next-intl/server';
 
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy for AppsPiece.com',
-  description: 'Welcome to AppsPiece.com. At AppsPiece.com, we deeply value the privacy and security of our users.',
-  keywords:"",
+interface MetadataParams {
+  params: {
+    locale: string;
+  };
 }
- 
+
+export async function generateMetadata({ params: { locale } }: MetadataParams) {
+  const t = await getTranslations({locale, namespace: 'privacy'});
+
+  return {
+    title: t('pageTitle'),
+    description: t('intro'),
+  };
+}
 
 export const runtime ="edge";
 
@@ -17,9 +25,6 @@ const PrivacyPage = () => {
 
   const t = useTranslations('privacy');
 
-  metadata.title= t('pageTitle');
-  metadata.description= t('intro');
-  
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">
         <h1 className="text-2xl font-bold text-center mb-6">{t('pageTitle')}</h1>

@@ -7,20 +7,28 @@ import styles from './wheel.module.css';
 import Wheel from '../../../components/Rulette';
 
 
-export const metadata: Metadata = {
-  title: 'Random Wheel',
-  description: 'Random roulette is a versatile and fun tool, ideal for conducting draws in an unbiased and exciting way.',
-  keywords: "roulette wheel simulator, random draw tool, decision maker wheel, online roulette game, wheel of fortune, classroom decision wheel",
+import {getTranslations} from 'next-intl/server';
+interface MetadataParams {
+  params: {
+    locale: string;
+  };
 }
- 
-export const runtime ="edge";
 
+export async function generateMetadata({ params: { locale } }: MetadataParams) {
+  const t = await getTranslations({locale, namespace: 'wheel'});
+
+  return {
+    title: t('title'),
+    description: t('descrip'),
+    keywords: t('keywords')
+  };
+}
+
+export const runtime ="edge";
 
 const wheel = () => {
   const t = useTranslations('wheel');
-  metadata.title= t('title');
-  metadata.description= t('descrip');
-  metadata.keywords= t('keywords');
+
   return (
     <>
       <div className={`relative overflow-x-hidden flex-wrap flex justify-center items-center ${styles.container} `}> 

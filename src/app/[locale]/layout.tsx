@@ -4,14 +4,23 @@ import "../globals.css";
 import pick from 'lodash/pick';
 import {NextIntlClientProvider, useMessages} from 'next-intl';
 import {useTranslations} from 'next-intl';
-import type { Metadata } from 'next'
+import {getTranslations} from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Apps PIECE',
-  description: 'Use our online tool, a roulette that picks candidate names randomly, perfect for fair and unbiased selections in any event.',
-  keywords:"Sweepstakes, contests, get Instagram comment, random Instagram comment, Facebook giveaway, free sweepstakes, Instagram giveaway app, free Instagram giveaways, free Facebook giveaway, random winner, random draw, roulette of chance, wheel of fortune, random participant, random roulette",
+
+interface MetadataParams {
+  params: {
+    locale: string;
+  };
 }
- 
+
+export async function generateMetadata({ params: { locale } }: MetadataParams) {
+  const t = await getTranslations({locale, namespace: 'header'});
+
+  return {
+    title: "Apps PIECE",
+    keywords: t('keywords'),
+  };
+}
 
 
 export default function RootLayout({
@@ -23,10 +32,7 @@ export default function RootLayout({
 }) {
   
   const t = useTranslations('header');
-  metadata.keywords= t('keywords');
-
   const messages = useMessages();
-
 
   return (
     <html lang={locale}>

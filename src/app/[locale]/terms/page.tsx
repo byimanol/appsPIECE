@@ -1,22 +1,30 @@
 import React from 'react';
 import {useTranslations} from 'next-intl';
-import type { Metadata } from 'next'
+import {getTranslations} from 'next-intl/server';
 
-export const metadata: Metadata = {
-  title: 'Terms and Conditions of Use for AppsPiece.com',
-  description: 'By using the services offered on AppsPiece.com, you agree to be legally bound by these terms and conditions.',
-  keywords:"",
+
+interface MetadataParams {
+  params: {
+    locale: string;
+  };
 }
- 
+
+export async function generateMetadata({ params: { locale } }: MetadataParams) {
+  const t = await getTranslations({locale, namespace: 'terms'});
+
+  return {
+    title: t('pageTitle'),
+    description: t('section1Content'),
+  };
+}
+
+
 export const runtime ="edge";
 
 
 const TermsPage = () => {
 
   const t = useTranslations('terms');
-
-  metadata.title= t('pageTitle');
-  metadata.description= t('section1Content');
 
   return (
     <div className="max-w-4xl mx-auto my-10 p-5 bg-white shadow-lg rounded-lg">

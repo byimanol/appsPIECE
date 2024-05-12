@@ -1,9 +1,4 @@
 import {Link} from '../../navigation';
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-    title:'Apps PIECE - WELCOME',
-}
 
 export const runtime ="edge";
 
