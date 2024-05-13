@@ -19,6 +19,7 @@ export async function generateMetadata({ params: { locale } }: MetadataParams) {
   return {
     title: "Apps PIECE",
     keywords: t('keywords'),
+    description: t('description'),
   };
 }
 
