@@ -30,7 +30,7 @@ const Navbar  = () => {
                             {t('home')}
                             </Link>
 
-                            <Link href={`/wheel`} className="font-bold text-white hover:underline  p-2">
+                            <Link href={`/wheel`} className="font-bold text-white hover:underline p-2">
                             {t('wheel')}
                             </Link>
                                 
@@ -42,13 +42,13 @@ const Navbar  = () => {
                                 <input type="checkbox" className="peer hidden" id="menu-toggle" />
                                 <label htmlFor="menu-toggle" className="cursor-pointer py-5 px-3 inline-block">{t('in')}</label>
 
-                                <ul style={{ background: '#414aad'} } className="absolute hidden peer-checked:flex flex-col bg-black top-full right-0">
+                                <ul style={{ background: '#414aad'} } className="absolute hidden peer-checked:flex flex-col top-full right-0">
                                    
-                                    <Link   href={`/`} locale="es" className="py-2 px-4 block font-bold text-white  hover:text-black rounded-lg">
+                                    <Link   href={`/`} locale="es" className="py-2 px-4 block font-bold text-white hover:underline ">
                                         Es
                                     </Link>
                             
-                                    <Link href={`/`} locale="en" className="py-2 px-4 block font-bold text-white  hover:text-black rounded-lg">
+                                    <Link href={`/`} locale="en" className="py-2 px-4 block font-bold text-white hover:underline ">
                                         En
                                     </Link>
                                 </ul>
@@ -95,8 +95,8 @@ const Navbar  = () => {
             {isClick && ( 
                 <div className="md:hidden">
                     <div className="text-lg px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                        <Link href={`/wheel`}  className="text-white block hover:underline  p-2">{t('home')}</Link>
-                        <Link href={`/wheel`}  className="text-white block hhover:underline  p-2">{t('wheel')}</Link>
+                        <Link href={`/`}  className="text-white block hover:underline  p-2">{t('home')}</Link>
+                        <Link href={`/wheel`}  className="text-white block hover:underline  p-2">{t('wheel')}</Link>
                         <Link href={`/contact`} className="text-white block hover:underline   p-2">{t('contact')}</Link>
                     </div>
                 </div> 
