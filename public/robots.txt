@@ -2,7 +2,6 @@ User-agent: *
 Disallow: /privacy/
 Disallow: /contact/
 Disallow: /terms/
-Disallow: /terms/
 Disallow: /defaultsite/
 Disallow: /cdn-cgi/l/email-protection
 

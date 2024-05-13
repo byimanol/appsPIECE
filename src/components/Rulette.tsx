@@ -167,7 +167,7 @@ const Wheel = () => {
     
         setWave(true);
         setEstado("Sortear"); 
-    }, 2000); // Tiempo de espera igual a la duración de la transición
+    }, 10000); // Tiempo de espera igual a la duración de la transición
 };
 
 
