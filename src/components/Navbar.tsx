@@ -9,8 +9,7 @@ const Navbar  = () => {
     const toggleNav = () =>{
         setisClick(!isClick);
     };
-
-
+    
     return(
         <div style={{ background: '#606be5'}} className={``}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,8 +24,7 @@ const Navbar  = () => {
                         </div>
                     </div>
                     <div className="hidden md:block">
-
-                        <div className="text-lg ml-4 flex items-center space-x-4">
+                        <div className=" text-lg ml-4 flex items-center space-x-4">
 
                             <Link href={`/`} className="font-bold text-white hover:bg-slate-400 hover:text-black rounded-lg p-2">
                             {t('home')}
@@ -35,11 +33,29 @@ const Navbar  = () => {
                             <Link href={`/wheel`} className="font-bold text-white hover:bg-slate-400 hover:text-black rounded-lg p-2">
                             {t('wheel')}
                             </Link>
-
+                                
                             <Link href={`/contact`} className="font-bold text-white hover:bg-slate-400 hover:text-black rounded-lg p-2">
                             {t('contact')}
                             </Link>
+                          
+                            <div style={{ background: '#414aad'} } className="z-10 relative text-white font-bold ">
+                                <input type="checkbox" className="peer hidden" id="menu-toggle" />
+                                <label htmlFor="menu-toggle" className="cursor-pointer py-5 px-3 inline-block">{t('in')}</label>
+
+                                <ul style={{ background: '#414aad'} } className="absolute hidden peer-checked:flex flex-col bg-black top-full right-0">
+                                   
+                                    <Link   href={`/`} locale="es" className="py-2 px-4 block font-bold text-white  hover:text-black rounded-lg">
+                                        Es
+                                    </Link>
                             
+                                    <Link href={`/`} locale="en" className="py-2 px-4 block font-bold text-white  hover:text-black rounded-lg">
+                                        En
+                                    </Link>
+                                </ul>
+
+                            </div>
+
+
 
                         </div>
                     </div>

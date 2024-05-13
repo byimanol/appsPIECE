@@ -1,17 +1,14 @@
-User-agent: AdsBot-Google
-Disallow: /es/contact
-Disallow: /en/contact
-Disallow: /es/privacy
-Disallow: /en/privacy
-Disallow: /en/terms
-Disallow: /es/terms
-
-User-agent: Mediapartners-Google
-Disallow: /es/contact
-Disallow: /en/contact
-Disallow: /es/privacy
-Disallow: /en/privacy
-Disallow: /en/terms
-Disallow: /es/terms
+User-agent: *
+Disallow: /privacy/
+Disallow: /contact/
+Disallow: /terms/
 
 Crawl-delay: 1
+
+
+
+
+
+
+
+

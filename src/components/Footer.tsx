@@ -7,10 +7,10 @@ const Footer = () => {
     const t = useTranslations('footer');
 
     return(
-        <div style={{ background: '#606be5',boxShadow: 'inset -4px -4px 0px 3px #00000042'}} className="bg-white rounded-lg shadow m-4 bg-gray-800 ">
+        <div style={{ background: '#606be5',boxShadow: 'inset -4px -4px 0px 3px #00000042'}} className=" rounded-lg shadow m-4 ">
             <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between   ">
                 <span style={{ color: 'white'} } className="text-lg font-bold sm:text-center ">© 2024 <a href="/" className="hover:underline">Apps & PIECE</a>. {t('title')}</span>
-                <ul style={{ color: 'white'} } className="flex flex-wrap items-center mt-3 text-lg font-bold  font-medium text-gray-500  sm:mt-0">
+                <ul style={{ color: 'white'} } className="flex flex-wrap items-center mt-3 text-lg font-medium text-gray-500  sm:mt-0">
                     <Link href="/terms" className="hover:underline me-4 md:me-6">
                     {t('terms')}
                     </Link>  
@@ -19,10 +19,7 @@ const Footer = () => {
                     </Link>
                     <Link href="/contact" className="hover:underline me-4 md:me-6">
                     {t('contact')}
-                    </Link>
-                    <Link  href="/" className="hover:underline me-4 md:me-6" locale="es">{t('I2')}</Link>
-                    <Link href="/"  className="hover:underline me-4 md:me-6" locale="en">{t('I1')}</Link>
-
+                    </Link> 
                 </ul>
             </div>
         </div>

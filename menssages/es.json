@@ -1,5 +1,6 @@
 
 {
+
     "privacy": {
         "pageTitle": "Política de Privacidad para AppsPiece.com",
         "effectiveDate": "Fecha efectiva: [2024/05/05]",
@@ -62,6 +63,7 @@
         "keywords": "ruleta aleatoria, ruleta online, ruleta para tomar decisiones, ruleta personalizable, tirar dados online, números aleatorios, herramienta de decisión aleatoria, ruleta para eventos, ruleta para aulas, ruleta para reuniones"
     },
     "header":{ 
+        "in":"Es",
         "home":"Inicio",
         "contact":"Conctato",
         "wheel":"Ruleta",
