@@ -10,12 +10,12 @@ export default createMiddleware({
   defaultLocale: 'en',
   domains: [
     {
-      domain: 'localhost',
+      domain: 'appspiece.com',
       defaultLocale: 'en',
       locales: ['en'],
     },
     {
-      domain: 'es.localhost',
+      domain: 'es.appspiece.com',
       defaultLocale: 'es',
       locales: ['es'],
     },
