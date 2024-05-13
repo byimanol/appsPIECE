@@ -2,6 +2,14 @@ User-agent: *
 Disallow: /privacy/
 Disallow: /contact/
 Disallow: /terms/
+Disallow: /en/privacy/
+Disallow: /en/contact/
+Disallow: /en/terms/
+Disallow: /es/privacy/
+Disallow: /es/contact/
+Disallow: /es/terms/
+
+
 
 Crawl-delay: 1
 
