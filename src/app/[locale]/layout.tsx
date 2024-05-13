@@ -23,6 +23,7 @@ export async function generateMetadata({ params: { locale } }: MetadataParams) {
 }
 
 
+
 export default function RootLayout({
   children,
   params: {locale}

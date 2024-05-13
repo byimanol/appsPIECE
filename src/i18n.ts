@@ -7,10 +7,7 @@ const locales = ['en', 'es'];
  
 export default getRequestConfig(async ({locale}) => {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)){
-    alert("erroasd")
-    notFound();
-  } 
+  if (!locales.includes(locale as any)) notFound();
  
   return {
     messages: (await import(`../menssages/${locale}.json`)).default

@@ -38,7 +38,7 @@ const Navbar  = () => {
                             {t('contact')}
                             </Link>
                           
-                            <div style={{ background: '#414aad'} } className="z-10 relative text-white font-bold ">
+                            {/* <div style={{ background: '#414aad'} } className="z-10 relative text-white font-bold ">
                                 <input type="checkbox" className="peer hidden" id="menu-toggle" />
                                 <label htmlFor="menu-toggle" className="cursor-pointer py-5 px-3 inline-block">{t('in')}</label>
 
@@ -53,7 +53,7 @@ const Navbar  = () => {
                                     </Link>
                                 </ul>
 
-                            </div>
+                            </div> */}
 
 
 
