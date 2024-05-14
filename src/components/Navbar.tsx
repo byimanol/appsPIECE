@@ -38,26 +38,7 @@ const Navbar  = () => {
                             <Link href={`/contact`} className="font-bold text-white hover:underline  p-2">
                             {t('contact')}
                             </Link>
-                          
-                            {/* <div style={{ background: '#414aad'} } className="z-10 relative text-white font-bold ">
-                                <input type="checkbox" className="peer hidden" id="menu-toggle" />
-                                <label htmlFor="menu-toggle" className="cursor-pointer py-5 px-3 inline-block">{t('in')}</label>
-
-                                <ul style={{ background: '#414aad'} } className="absolute hidden peer-checked:flex flex-col top-full right-0">
-                                   
-                                    <Link   href={`/`} locale="es" className="py-2 px-4 block font-bold text-white hover:underline ">
-                                        Es
-                                    </Link>
                             
-                                    <Link href={`/`} locale="en" className="py-2 px-4 block font-bold text-white hover:underline ">
-                                        En
-                                    </Link>
-                                </ul>
-
-                            </div> */}
-
-
-
                         </div>
                     </div>
                     <div className="md:hidden flex items-center">
