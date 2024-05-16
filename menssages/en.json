@@ -55,11 +55,14 @@
         "button":"Copy"
     },
     "wheel":{
-        "title":"Random Wheel",
-        "descrip":"Random roulette is a versatile and fun tool, ideal for conducting draws in an unbiased and exciting way.",
+        "title":"Random Online Wheel Make Your Decisions with One Spin click",
+        "descrip":"Spin the wheel or MULTIPLE times. Create a unique wheel now with this free tool to generate decisions or participants randomly online and easily. 🎯",
+        "sub_text":"Rotate the wheel or MULTIPLE times. Design a special wheel now with this free tool to generate decisions or participants randomly online and neatly. 🎯",
+
+
         "text":"A random wheel is a dynamic and engaging tool perfect for conducting draws and making decisions. It can be customized to include various elements such as numbers, countries, teams, colors, and even irregular verbs or questions. This versatility makes the random wheel an ideal choice for teachers, event organizers, or anyone looking to add a fun twist to their decision-making processes. The aesthetic design can be tailored to fit the theme of any event, enhancing user experience. Available as an app, it's easily accessible, making it convenient for on-the-go decisions. Whether you're looking to pick a random animal or generate a random letter from the alphabet, the random wheel ensures every spin is fair and exciting.",
         "placerholder":"Participant 1\nParticipant 2\nParticipant 3\n......",
-        "keywords": "flip a coin,random number generator,coin flip,wheel of names,roulette wheel simulator, random draw tool, decision maker wheel, online roulette game, wheel of fortune, classroom decision wheel"
+        "keywords": "random number, wheel of names, random draw tool, decision maker wheel,"
     },
     "header":{ 
         "in":"En",
