@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang={locale}>
       <body className="bg-gray-800 overflow-x-hidden" >
         <header>
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
           <script async={true} src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2588507502767667"
         crossOrigin="anonymous"></script>
           <meta name="google-adsense-account" content="ca-pub-2588507502767667"/>
