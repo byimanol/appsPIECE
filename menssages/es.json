@@ -65,12 +65,13 @@
         "keywords": "ruleta si o no,ruleta aleatoria, ruleta online, ruleta para tomar decisiones"
     },
     "header":{ 
+        "defaul_title":"Apps Piece - Explora Herramientas y Aplicaciones Aleatorias para Todo Uso",
         "in":"Es",
         "home":"Inicio",
         "contact":"Conctato",
         "wheel":"Ruleta",
-        "description":"Explora las mejores aplicaciones de sorteos y ruletas para divertirte y ganar. Descubre herramientas fiables para generar números aleatorios, ideales para juegos, sorteos y decisiones aleatorias: ¡prueba suerte hoy mismo!",
-        "keywords":"sorteos, concursos, obtener comentario de Instagram, comentario aleatorio Instagram, sorteo para Facebook, sorteos gratis, aplicación para sorteos en Instagram, sorteos en Instagram gratis, sorteo en facebook gratis, ganador al azar, sorteo al azar ruleta azar, rueda azar, partipante aleatorio, ruleta aleatoria"
+        "description":"Explora las mejores aplicaciones de sorteos y ruletas para divertirte y ganar. Descubre herramientas fiables para generar números aleatorios en juegos, sorteos y decisiones. ¡Prueba suerte hoy!",
+        "keywords":"concurso aleatorio, sorteos gratis, aplicación para sorteos,ganador al azar, sorteo al azar ruleta azar, rueda azar, partipante aleatorio, ruleta aleatoria"
     },
     "footer":{
         "title":"Todos los derechos reservados.",
