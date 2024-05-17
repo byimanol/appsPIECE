@@ -3,6 +3,8 @@ Disallow: /privacy/
 Disallow: /contact/
 Disallow: /terms/
 Disallow: /defaultsite/
+Disallow: /es/
+Disallow: /en/
 Disallow: /cdn-cgi/l/email-protection
 
 Crawl-delay: 1
