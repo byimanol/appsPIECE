@@ -26,7 +26,7 @@ export const config = {
   // Match only internationalized pathnames
   // matcher: ['/((?!_next|_vercel|.*\\..*).*)'],
   matcher: [
-    '/((?!api|_next/static|_next/image|robots.txt|ads.txt|public/favicon/*|images/books|icons|manifest).*)'
+    '/((?!api|_next/static|_next/image|robots.txt|ads.txt|favicon|images/books|icons|manifest).*)'
   ]
 };
 
