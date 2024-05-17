@@ -26,7 +26,8 @@ export const config = {
   // Match only internationalized pathnames
   // matcher: ['/((?!_next|_vercel|.*\\..*).*)'],
   matcher: [
-    '/((?!api|_next/static|_next/image|robots.txt|ads.txt|favicon-32x32.png|apple-touch-icon.png|favicon-16x16.png|safari-pinned-tab.svg|site.webmanifest|images/books|icons|manifest).*)'
+    '/((?!api|_next/static|_next/image|robots.txt|ads.txt|public|images/books|icons|manifest).*)'
   ]
 };
+
 
