@@ -16,8 +16,8 @@ interface MetadataParams {
 export async function generateMetadata({ params: { locale } }: MetadataParams) {
   const t = await getTranslations({locale, namespace: 'header'});
 
-  return {
-    title: "Apps PIECE",
+  return {   
+    title: t('defaul_title'),
     keywords: t('keywords'),
     description: t('description'),
   };

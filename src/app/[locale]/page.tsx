@@ -1,4 +1,5 @@
-import {Link} from '../../navigation';
+// import {Link} from '../../navigation';
+import Link from 'next/link'
 import {useTranslations} from 'next-intl';
 
 
