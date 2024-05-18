@@ -28,7 +28,6 @@ function ramdocolor(item="") {
 const Wheel = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [estado, setEstado] = useState('Sortear');
-  const [wave, setWave] = useState(true); 
   const [getConcursantes, setConcursantes] = useState('');
   const [isModalOpen, setModalOpen] = useState(false);
   const [win, setWin] = useState('');
@@ -130,6 +129,9 @@ const Wheel = () => {
   
   const handleTextChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setConcursantes(event.target.value)
+    const canva = canvasRef.current;
+    if (!canva) return;
+    canva.style.animation = `none`;
   };
 
   const manejarSorteo = () => {
@@ -140,17 +142,14 @@ const Wheel = () => {
     if (estado !== "Sortear") return;
 
     setEstado("");
-    setWave(false);
-
-
-
+    
     // Generar un nuevo giro aleatorio entre 0 y 359 grados más una vuelta completa (360 grados)
     const gradosAdicionales = Math.floor(Math.random() * 360);  // 0 a 359 grados
     // Si hay una rotación previa almacenada, úsala, si no, empieza desde cero
     const rotacionActual = canva.dataset.rotacion ? parseInt(canva.dataset.rotacion) : 0;
     let nuevaRotacion = rotacionActual  + gradosAdicionales + 760; // Añade una vuelta completa
   
-
+    
     canva.style.transform = `rotate(${270+nuevaRotacion}deg)`;
     canva.dataset.rotacion = nuevaRotacion.toString(); 
     setTimeout(() => {
@@ -165,7 +164,6 @@ const Wheel = () => {
         setModalOpen(true); 
         setWin(concursantes[indiceGanador]); 
     
-        setWave(true);
         setEstado("Sortear"); 
     }, 10000); // Tiempo de espera igual a la duración de la transición
 };
@@ -185,7 +183,7 @@ const Wheel = () => {
 
         <div className={`${styles.content}  my-32 mr-16 flex justify-center items-center ` }>
           <div onClick={manejarSorteo} className={`${styles.markwinner}`}></div>
-          <div  style={{ display: wave ? 'block' : 'none' }} className={styles.wave}></div>
+        
           <canvas onClick={manejarSorteo} ref={canvasRef} width="600" height="600"  className={`${styles.cavas}`}></canvas>
         </div>
 

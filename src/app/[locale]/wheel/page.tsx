@@ -31,7 +31,7 @@ const wheel = () => {
 
   return (
     <>
-      <div className={`relative overflow-x-hidden flex-wrap flex justify-center items-center ${styles.container} `}> 
+      <div className={`flex-wrap flex justify-center items-center ${styles.container} `}> 
 
         <Wheel></Wheel>
 
