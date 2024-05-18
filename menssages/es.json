@@ -56,8 +56,8 @@
         "button":"Copiar"
     },
     "wheel":{
-        "title":"Ruleta Aleatoria Online Crea tus Decisiones con un Solo Giro click",
-        "descrip":"Rota la ruleta o VARIAS veces. Diseña una ruleta única ahora con esta herramienta gratis para generar decisiones o participantes aleatoriamente online y limpiamente 🎯",
+        "title":"Ruleta Aleatoria Online - Fácil y Rápida | Apps Piece",
+        "descrip":"Utiliza nuestra ruleta aleatoria para tomar decisiones, seleccionar participantes o elegir opciones con un giro. Personalizable y fácil de usar. Pruébala ahora!",
         "sub_text":"Gira la ruleta o VARIAS veces. Crea una ruleta exclusiva ahora con esta herramienta gratuita para generar decisiones o participantes al azar online y con facilidad. 🎯",
 
         "text":"La ruleta aleatoria es una herramienta versátil y divertida, ideal para realizar sorteos de manera imparcial y emocionante. Personalizable y estéticamente agradable, esta ruleta puede adaptarse a diversas necesidades, permitiendo incluir nombres, números, colores o incluso opciones específicas como sí o no. Es perfecta para dinamizar eventos, aulas o reuniones, ofreciendo un método transparente y rápido para decidir ganadores o resolver decisiones. La disponibilidad de aplicaciones y programas facilita su uso en diversos dispositivos, asegurando que todos puedan acceder y participar sin complicaciones. Con la ruleta aleatoria, cada giro promete una nueva aventura en sorteos y decisiones al azar.",
@@ -65,12 +65,12 @@
         "keywords": "ruleta si o no,ruleta aleatoria, ruleta online, ruleta para tomar decisiones"
     },
     "header":{ 
-        "defaul_title":"Apps Piece - Explora Herramientas y Aplicaciones Aleatorias para Todo Uso",
+        "defaul_title":"Explora las Mejores Herramientas y Aplicaciones Gratis para Todo Uso - Apps Piece",
         "in":"Es",
         "home":"Inicio",
         "contact":"Conctato",
         "wheel":"Ruleta",
-        "description":"Explora las mejores aplicaciones de sorteos y ruletas para divertirte y ganar. Descubre herramientas fiables para generar números aleatorios en juegos, sorteos y decisiones. ¡Prueba suerte hoy!",
+        "description":"Descubre una amplia gama de herramientas y aplicaciones gratuitas en Apps Piece. Mejora tu productividad, creatividad y entretenimiento con nuestra selección curada. ¡Explora ahora!",
         "keywords":"concurso aleatorio, sorteos gratis, aplicación para sorteos,ganador al azar, sorteo al azar ruleta azar, rueda azar, partipante aleatorio, ruleta aleatoria"
     },
     "footer":{
@@ -82,5 +82,6 @@
         "I2":"Español"
     }
 }
+
 
 
